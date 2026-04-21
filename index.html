@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>CESARWLDR | Official Links</title>
+
+    <link rel="icon" type="image/png" href="perfil.png">
+    <link rel="apple-touch-icon" href="perfil.png"> 
+    <meta name="description" content="Official Links of CESARWLDR. Listen to my music, watch my latest videos and follow me on my social media.">
+    <meta name="keywords" content="CESARWLDR, Música, Artista, Reggaeton, Trap, El Tigre, Venezuela">
+    <meta name="author" content="CESARWLDR">
+    
+    <meta property="og:title" content="CESARWLDR | Official Links">
+    <meta property="og:description" content="Official Links of CESARWLDR. Listen to my music and follow me.">
+    <meta property="og:image" content="perfil.png">
+    <meta property="og:url" content="https://tu-dominio.com"> <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CESARWLDR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CESARWLDR | Official Links">
+    <meta name="twitter:description" content="Listen to my latest tracks and follow my journey.">
+    <meta name="twitter:image" content="perfil.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #ff0000;
+            --dark-overlay: rgba(0, 0, 0, 0.85);
+            --glass-bg: rgba(255, 255, 255, 0.08);
+            --whatsapp-green: #25d366; 
+        }
+
+        body {
+            font-family: 'Lexend', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000 url('fondo.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .overlay {
+            background: var(--dark-overlay);
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-switch { align-self: flex-end; margin-bottom: 20px; }
+        .lang-btn {
+            background: var(--glass-bg);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+        .lang-btn.active { background: var(--primary-red); border-color: var(--primary-red); }
+
+        .profile-img {
+            width: 130px; height: 130px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-red);
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.7rem; margin: 0; letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+
+        .username { font-size: 0.9rem; opacity: 0.8; margin-bottom: 20px; }
+
+        .coming-soon {
+            background: linear-gradient(90deg, transparent, rgba(255,0,0,0.2), transparent);
+            padding: 8px; margin-bottom: 15px; font-size: 0.8rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        .video-container {
+            position: relative; width: 100%; padding-bottom: 56.25%; 
+            margin-bottom: 25px; border-radius: 12px;
+            overflow: hidden; border: 2px solid var(--primary-red);
+        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        .featured-link {
+            background: var(--primary-red);
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        .featured-link::after {
+            content: "";
+            position: absolute;
+            top: -50%; left: -60%;
+            width: 20%; height: 200%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(30deg);
+            transition: none;
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { left: -60%; }
+            20% { left: 120%; }
+            100% { left: 120%; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .links-grid { display: flex; flex-direction: column; gap: 12px; }
+
+        /* EFECTO GLOW AGREGADO */
+        .social-link {
+            background: var(--glass-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            opacity: 0;
+            animation: fadeInLinks 0.5s ease forwards;
+        }
+
+        @keyframes fadeInLinks {
+            to { opacity: 1; }
+        }
+
+        .social-link:nth-child(1) { animation-delay: 0.2s; }
+        .social-link:nth-child(2) { animation-delay: 0.3s; }
+        .social-link:nth-child(3) { animation-delay: 0.4s; }
+        .social-link:nth-child(4) { animation-delay: 0.5s; }
+        .social-link:nth-child(5) { animation-delay: 0.6s; }
+        .social-link:nth-child(6) { animation-delay: 0.7s; }
+
+        /* Efecto de resplandor al pasar el cursor o tocar */
+        .social-link:hover {
+            background: white;
+            color: black;
+            transform: translateX(5px) scale(1.02);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 5px var(--primary-red);
+            border-color: var(--primary-red);
+        }
+
+        .whatsapp-channel {
+            border: 1px solid var(--whatsapp-green) !important;
+            color: var(--whatsapp-green) !important;
+        }
+        .whatsapp-channel:hover {
+            background: var(--whatsapp-green) !important;
+            color: white !important;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5) !important;
+        }
+
+        #copy-toast {
+            visibility: hidden;
+            min-width: 200px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px;
+            position: fixed;
+            z-index: 101;
+            bottom: 80px;
+            font-size: 0.8rem;
+            border: 1px solid var(--primary-red);
+        }
+
+        #copy-toast.show { visibility: visible; animation: fadeinout 2s; }
+
+        @keyframes fadeinout {
+            0%, 100% { opacity: 0; }
+            20%, 80% { opacity: 1; }
+        }
+
+        .share-btn {
+            position: fixed; bottom: 20px; right: 20px;
+            background: var(--primary-red);
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: 0.3s; z-index: 100;
+        }
+        
+        .share-btn:hover { transform: scale(1.1); box-shadow: 0 0 20px var(--primary-red); }
+
+        .footer { margin-top: 50px; font-size: 0.7rem; opacity: 0.5; padding-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="lang-switch">
+            <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
+            <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+        </div>
+
+        <div class="container">
+            <img src="perfil.png" alt="CESARWLDR" class="profile-img">
+            <h1>CESARWLDR</h1>
+            <p class="username" id="role"></p>
+
+            <div class="coming-soon" id="coming-text"></div>
+
+            <div class="video-container">
+                <iframe 
+                    id="main-video"
+                    src="" 
+                    title="Main Video" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <a href="#" target="_blank" class="featured-link" id="main-track">
+                <span id="main-track-text"></span>
+            </a>
+
+            <div class="links-grid">
+                <a href="https://www.instagram.com/two_c06" target="_blank" class="social-link">
+                    <i class="fa-brands fa-instagram"></i> Instagram: @two_c06
+                </a>
+                <a href="https://www.instagram.com/cesarcampos2026" target="_blank" class="social-link">
+                    <i class="fa-brands fa-instagram"></i> Instagram: @cesarwldr
+                </a>
+                <a href="https://www.tiktok.com/@cesarwldr1" target="_blank" class="social-link">
+                    <i class="fa-brands fa-tiktok"></i> <span id="tk-main"></span>
+                </a>
+                <a href="https://www.tiktok.com/@cesarwldr" target="_blank" class="social-link">
+                    <i class="fa-brands fa-tiktok"></i> <span id="tk-backup"></span>
+                </a>
+                <a href="https://youtube.com/@cesar_c08" target="_blank" class="social-link">
+                    <i class="fa-brands fa-youtube"></i> <span id="yt-channel"></span>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb7imFWHVvTaNYSG5w2x" target="_blank" class="social-link whatsapp-channel" id="wa-channel-btn">
+                    <i class="fa-brands fa-whatsapp"></i> <span id="wa-channel-text"></span>
+                </a>
+            </div>
+
+            <div class="footer" id="footer-text"></div>
+        </div>
+    </div>
+
+    <div id="copy-toast"></div>
+
+    <div class="share-btn" onclick="shareProfile()">
+        <i class="fa-solid fa-share-nodes"></i>
+    </div>
+
+    <script>
+        const CONFIG = {
+            youtubeURL: "https://youtu.be/Ij30Dlld-lk", 
+            proximoEstreno: "PLAYER",
+            cancionActual: "SOMETIME"
+        };
+
+        let currentLang = 'es';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const texts = {
+                es: {
+                    role: "Artista Musical Oficial",
+                    coming: `🚀 Próximo Estreno: <b>"${CONFIG.proximoEstreno}"</b>`,
+                    mainTrack: `<i class="fa-solid fa-fire"></i> ESCUCHAR "${CONFIG.cancionActual}" AQUÍ`,
+                    tkMain: "TikTok Principal",
+                    tkBackup: "TikTok Respaldo",
+                    ytChannel: "Canal de YouTube",
+                    waChannel: "Canal de WhatsApp",
+                    footer: "© 2026 CESARWLDR | Todos los derechos reservados.",
+                    copy: "Enlace copiado al portapapeles"
+                },
+                en: {
+                    role: "Official Music Artist",
+                    coming: `🚀 Next Release: <b>"${CONFIG.proximoEstreno}"</b>`,
+                    mainTrack: `<i class="fa-solid fa-fire"></i> LISTEN TO "${CONFIG.cancionActual}" HERE`,
+                    tkMain: "Main TikTok",
+                    tkBackup: "Backup TikTok",
+                    ytChannel: "YouTube Channel",
+                    waChannel: "WhatsApp Channel",
+                    footer: "© 2026 CESARWLDR | All rights reserved.",
+                    copy: "Link copied to clipboard"
+                }
+            };
+
+            const t = texts[lang];
+            document.getElementById('role').innerText = t.role;
+            document.getElementById('coming-text').innerHTML = t.coming;
+            document.getElementById('main-track').innerHTML = t.mainTrack;
+            document.getElementById('tk-main').innerText = t.tkMain;
+            document.getElementById('tk-backup').innerText = t.tkBackup;
+            document.getElementById('yt-channel').innerText = t.ytChannel;
+            document.getElementById('wa-channel-text').innerText = t.waChannel;
+            document.getElementById('footer-text').innerText = t.footer;
+            window.currentCopyText = t.copy;
+
+            document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+
+        function initApp() {
+            let url = CONFIG.youtubeURL.trim();
+            let videoID = "";
+
+            if (url.includes("youtu.be/")) {
+                videoID = url.split("youtu.be/")[1].split(/[?#]/)[0];
+            } else if (url.includes("watch?v=")) {
+                videoID = url.split("v=")[1].split(/[&?#]/)[0];
+            } else if (url.includes("embed/")) {
+                videoID = url.split("embed/")[1].split(/[?#]/)[0];
+            } else {
+                videoID = url; 
+            }
+
+            document.getElementById('main-video').src = `https://www.youtube.com/embed/${videoID}`;
+            document.getElementById('main-track').href = url.includes("http") ? url : `https://youtu.be/${videoID}`;
+            setLanguage('es');
+        }
+
+        async function shareProfile() {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'CESARWLDR Official Links',
+                        text: 'Escucha mi música y sígueme en mis redes sociales.',
+                        url: window.location.href
+                    });
+                } catch (err) { showToast(); }
+            } else {
+                showToast();
+            }
+        }
+
+        function showToast() {
+            const toast = document.getElementById("copy-toast");
+            toast.innerText = window.currentCopyText || "Enlace copiado";
+            navigator.clipboard.writeText(window.location.href);
+            toast.className = "show";
+            setTimeout(() => { toast.className = ""; }, 2000);
+        }
+
+        initApp();
+    </script>
+</body>
+</html>
